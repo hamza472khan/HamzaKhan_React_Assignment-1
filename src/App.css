@@ -1,0 +1,105 @@
+ 
+/* General Reset & Layout */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(135deg, #1a1a2e 0%, #16213e 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  color: #ffffff;
+}
+
+/* Main Container */
+.profile-container {
+  background: rgba(255, 255, 255, 0.05);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 20px;
+  padding: 40px;
+  max-width: 700px;
+  width: 90%;
+  text-align: center;
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease;
+}
+
+.profile-container:hover {
+  transform: translateY(-5px);
+}
+
+/* Profile Image */
+.image-wrapper {
+  margin: 20px auto;
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 3px solid #4ecca3;
+  box-shadow: 0 0 15px rgba(78, 204, 163, 0.3);
+}
+
+.profile-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Typography */
+.main-heading {
+  font-size: 2.5rem;
+  margin-bottom: 10px;
+  color: #4ecca3; /* A clean teal for tech vibes */
+  letter-spacing: 1px;
+}
+
+.bio-text {
+  font-size: 1rem;
+  line-height: 1.6;
+  color: #cfd8dc;
+  margin-bottom: 25px;
+}
+
+/* Skills Section */
+.skill-section {
+  text-align: left;
+  background: rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  border-radius: 12px;
+  margin-bottom: 25px;
+}
+
+.skills-list {
+  margin-top: 0;
+  border-bottom: 1px solid #4ecca3;
+  display: inline-block;
+  padding-bottom: 5px;
+}
+
+.skill-section ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+.skill-section li {
+  background: #232946;
+  padding: 5px 15px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #4ecca3;
+  border: 1px solid rgba(78, 204, 163, 0.3);
+}
+
+/* Footer */
+.footer {
+  font-size: 0.8rem;
+  opacity: 0.6;
+  border-top: 1px solid rgba(255, 255, 255, 0.1);
+  padding-top: 20px;
+}
